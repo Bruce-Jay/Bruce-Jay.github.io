@@ -184,7 +184,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: "Noto Serif SC", Esteban;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -197,7 +197,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: "Noto Serif SC", Esteban;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -273,7 +273,7 @@ dd {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 0.875em;
+  font-size: 13px;
   margin: 0 0 20px;
   width: 100%;
 }
@@ -306,7 +306,7 @@ td {
   border-radius: 0;
   color: var(--btn-default-color);
   display: inline-block;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: 2;
   padding: 0 20px;
   transition: background-color 0.2s ease-in-out;
@@ -387,7 +387,7 @@ pre:hover .copy-btn {
   background-image: linear-gradient(#fcfcfc, #eee);
   border: 1px solid #d5d5d5;
   border-radius: 3px;
-  font-size: 0.8125em;
+  font-size: 0.875em;
   right: 4px;
   top: 8px;
 }
@@ -409,7 +409,7 @@ pre figcaption {
   background: var(--highlight-gutter-background);
   color: var(--highlight-foreground);
   display: flow-root;
-  font-size: 0.875em;
+  font-size: 13px;
   line-height: 1.2;
   padding: 0.5em;
 }
@@ -426,11 +426,11 @@ pre figcaption a:hover {
 }
 pre,
 code {
-  font-family: consolas, Menlo, monospace, 'PingFang SC', 'Microsoft YaHei';
+  font-family: "Roboto Mono";
 }
 code {
   border-radius: 3px;
-  font-size: 0.875em;
+  font-size: 13px;
   padding: 2px 4px;
   overflow-wrap: break-word;
 }
@@ -1134,7 +1134,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Linux Biolinum, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1142,7 +1142,7 @@ pre code {
 }
 .site-subtitle {
   color: #999;
-  font-size: 0.8125em;
+  font-size: 0.875em;
   margin: 10px 0;
 }
 .use-motion .site-title,
@@ -1211,7 +1211,7 @@ pre code {
 .menu-item a {
   border-bottom: 0;
   display: block;
-  font-size: 0.8125em;
+  font-size: 0.875em;
   transition: border-color 0.2s ease-in-out;
 }
 .menu-item a:hover,
@@ -1241,6 +1241,69 @@ pre code {
 }
 .use-motion .menu-item {
   visibility: hidden;
+}
+.github-corner :hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+.github-corner svg {
+  color: #fff;
+  fill: var(--theme-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+@media (max-width: 991px) {
+  .github-corner .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+@-moz-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@-o-keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+  40%, 80% {
+    transform: rotate(10deg);
+  }
 }
 .sidebar-inner {
   color: #999;
@@ -1277,11 +1340,11 @@ pre code {
 }
 .site-description {
   color: #999;
-  font-size: 1em;
+  font-size: 1.125em;
   margin-top: 5px;
 }
 .links-of-author a {
-  font-size: 0.8125em;
+  font-size: 0.875em;
 }
 .links-of-author .fa,
 .links-of-author .fab,
@@ -1312,10 +1375,10 @@ pre code {
   margin-right: 5px;
 }
 .links-of-blogroll {
-  font-size: 0.8125em;
+  font-size: 0.875em;
 }
 .links-of-blogroll-title {
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 600;
   margin-top: 0;
 }
@@ -1360,7 +1423,7 @@ pre code {
   color: #666;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.875em;
+  font-size: 1em;
 }
 .sidebar-nav li.sidebar-nav-overview {
   margin-left: 10px;
@@ -1447,7 +1510,7 @@ pre code {
   transform: rotate(-45deg);
 }
 .post-toc {
-  font-size: 0.875em;
+  font-size: 1em;
 }
 .post-toc ol {
   list-style: none;
@@ -1504,16 +1567,16 @@ pre code {
 }
 .site-state-item-count {
   display: block;
-  font-size: 1.25em;
+  font-size: 1.375em;
   font-weight: 600;
 }
 .site-state-item-name {
   color: inherit;
-  font-size: 0.875em;
+  font-size: 1em;
 }
 .footer {
   color: #999;
-  font-size: 0.875em;
+  font-size: 1em;
   padding: 20px 0;
 }
 .footer.footer-fixed {
@@ -1546,7 +1609,7 @@ pre code {
 }
 .languages {
   display: inline-block;
-  font-size: 1.125em;
+  font-size: 1.25em;
   position: relative;
 }
 .languages .lang-select-label span {
@@ -1724,7 +1787,7 @@ pre code {
   }
 }
 .posts-collapse .post-content .collection-title {
-  font-size: 1.125em;
+  font-size: 1.25em;
   position: relative;
 }
 .posts-collapse .post-content .collection-title::before {
@@ -1802,7 +1865,7 @@ pre code {
   color: var(--link-color);
 }
 .posts-collapse .post-content .post-title .fa-external-link-alt {
-  font-size: 0.875em;
+  font-size: 1em;
   margin-left: 5px;
 }
 .posts-collapse .post-content::before {
@@ -1815,12 +1878,13 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Linux Biolinum, Noto Serif SC, Linux Biolinum, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
   .post-body {
-    font-size: 1.125em;
+    font-size: 1.25em;
+    font-weight: 400;
   }
 }
 @media (min-width: 992px) {
@@ -1848,7 +1912,7 @@ pre code {
   border-bottom-style: none;
   color: inherit;
   float: right;
-  font-size: 0.875em;
+  font-size: 1em;
   margin-left: 10px;
   opacity: 0;
 }
@@ -1897,14 +1961,14 @@ pre code {
   opacity: 1;
 }
 .post-body .exturl .fa {
-  font-size: 0.875em;
+  font-size: 1em;
   margin-left: 4px;
 }
 .post-body .image-caption,
 .post-body img + figcaption,
 .post-body .fancybox + figcaption {
   color: #999;
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: bold;
   line-height: 1;
   margin: -15px auto 15px;
@@ -1961,7 +2025,7 @@ pre code {
   margin: 15px 0;
 }
 .posts-expand .post-header {
-  font-size: 1.125em;
+  font-size: 1.25em;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -1992,7 +2056,7 @@ pre code {
   transform: scaleX(1);
 }
 .posts-expand .post-title-link .fa-external-link-alt {
-  font-size: 0.875em;
+  font-size: 1em;
   margin-left: 5px;
 }
 .post-sticky-flag {
@@ -2002,12 +2066,12 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Linux Biolinum, Noto Serif SC, Linux Biolinum, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
 .posts-expand .post-meta-container .post-description {
-  font-size: 0.875em;
+  font-size: 1em;
   margin-top: 2px;
 }
 .posts-expand .post-meta-container time {
@@ -2048,7 +2112,7 @@ pre code {
 .post-nav-item a {
   border-bottom: 0;
   display: block;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: 1.6;
 }
 .post-nav-item a:active {
@@ -2086,7 +2150,7 @@ pre code {
 }
 .post-tags a {
   display: inline-block;
-  font-size: 0.8125em;
+  font-size: 0.875em;
 }
 .post-tags a:not(:last-child) {
   margin-right: 10px;
@@ -2105,7 +2169,7 @@ pre code {
 }
 .social-like {
   display: flex;
-  font-size: 0.875em;
+  font-size: 1em;
   justify-content: center;
   text-align: center;
 }
@@ -2593,7 +2657,7 @@ ul.breadcrumb li:last-child {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #38b6b3;
+  background: #ff29cd;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2612,4 +2676,42 @@ ul.breadcrumb li:last-child {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+@import url("https://fonts.googleapis.com/css2?family=Gulzar&family=Noto+Serif+SC:wght@300;400;600&display=swap");
+@font-face {
+  font-family: 'Linux Biolinum';
+  src: url("/fonts/LinBiolinum_Rah.eot");
+  font-display: swap;
+  src: url("/fonts/LinBiolinum_Rah.eot") format('embedded-opentype'), url("/fonts/LinBiolinum_Rah.woff2") format('woff2'), url("/fonts/LinBiolinum_Rah.woff") format('woff'), url("/fonts/LinBiolinum_Rah.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Linux Biolinum';
+  src: url("/fonts/LinBiolinum_RBah.eot");
+  font-display: swap;
+  src: url("/fonts/LinBiolinum_RBah.eot") format('embedded-opentype'), url("/fonts/LinBiolinum_RBah.woff2") format('woff2'), url("/fonts/LinBiolinum_RBah.woff") format('woff'), url("/fonts/LinBiolinum_RBah.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Linux Biolinum';
+  src: url("/fonts/LinBiolinum_RIah.eot");
+  font-display: swap;
+  src: url("/fonts/LinBiolinum_RIah.eot") format('embedded-opentype'), url("/fonts/LinBiolinum_RIah.woff2") format('woff2'), url("/fonts/LinBiolinum_RIah.woff") format('woff'), url("/fonts/LinBiolinum_RIah.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+body {
+  font-family: 'Linux Biolinum', 'Noto Serif SC', serif;
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Linux Biolinum', 'Noto Serif SC', serif;
+  font-weight: 700;
 }
