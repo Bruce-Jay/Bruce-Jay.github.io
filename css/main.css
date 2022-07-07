@@ -184,7 +184,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: "Noto Serif SC", Esteban;
+  font-family: Lora, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -197,7 +197,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Serif SC", Esteban;
+  font-family: Esteban, Lora, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -273,7 +273,7 @@ dd {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 13px;
+  font-size: 1em;
   margin: 0 0 20px;
   width: 100%;
 }
@@ -409,7 +409,7 @@ pre figcaption {
   background: var(--highlight-gutter-background);
   color: var(--highlight-foreground);
   display: flow-root;
-  font-size: 13px;
+  font-size: 1em;
   line-height: 1.2;
   padding: 0.5em;
 }
@@ -426,11 +426,11 @@ pre figcaption a:hover {
 }
 pre,
 code {
-  font-family: "Roboto Mono";
+  font-family: Roboto Mono, consolas, Menlo, monospace, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei';
 }
 code {
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 1em;
   padding: 2px 4px;
   overflow-wrap: break-word;
 }
@@ -1134,7 +1134,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Linux Biolinum, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Esteban, Lora, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1690,6 +1690,64 @@ pre code {
     transform: scale(1.1);
   }
 }
+@media (max-width: 567px) {
+  .main-inner {
+    padding: initial !important;
+  }
+  .posts-expand .post-header {
+    margin-bottom: 10px !important;
+  }
+  .post-block {
+    margin-top: initial !important;
+    padding: 8px 18px 8px !important;
+  }
+  .post-body h1,
+  .post-body h2,
+  .post-body h3,
+  .post-body h4,
+  .post-body h5,
+  .post-body h6 {
+    margin: 20px 0 8px;
+  }
+  .post-body .note h1,
+  .post-body .tabs .tab-content .tab-pane h1,
+  .post-body .note h2,
+  .post-body .tabs .tab-content .tab-pane h2,
+  .post-body .note h3,
+  .post-body .tabs .tab-content .tab-pane h3,
+  .post-body .note h4,
+  .post-body .tabs .tab-content .tab-pane h4,
+  .post-body .note h5,
+  .post-body .tabs .tab-content .tab-pane h5,
+  .post-body .note h6,
+  .post-body .tabs .tab-content .tab-pane h6 {
+    margin: 0 5px;
+  }
+  .post-body > p {
+    margin: 0 0 10px;
+  }
+  .post-body .note > p,
+  .post-body .tabs .tab-content .tab-pane > p {
+    padding: 0 5px;
+  }
+  .post-body img,
+  .post-body video {
+    margin-bottom: 10px !important;
+  }
+  .post-body .note {
+    margin-bottom: 10px !important;
+    padding: 10px !important;
+  }
+  .post-body .tabs .tab-content .tab-pane {
+    padding: 10px 10px 0 !important;
+  }
+  .post-eof {
+    margin: 40px auto 20px !important;
+  }
+  .pagination {
+    margin-top: 40px;
+  }
+}
 .noscript-warning {
   background-color: #f55;
   color: #fff;
@@ -1716,10 +1774,6 @@ pre code {
   position: fixed;
   z-index: 30;
   left: 30px;
-  width: 24px;
-}
-.back-to-top span {
-  display: none;
 }
 @media (max-width: 991px) {
   .back-to-top {
@@ -1878,7 +1932,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Linux Biolinum, Noto Serif SC, Linux Biolinum, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Lora, Lora, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2066,7 +2120,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Linux Biolinum, Noto Serif SC, Linux Biolinum, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Lora, Lora, Noto Serif SC, "Linux Biolinum", 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2657,7 +2711,7 @@ ul.breadcrumb li:last-child {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #ff29cd;
+  background: #a1dbff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2676,42 +2730,4 @@ ul.breadcrumb li:last-child {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-@import url("https://fonts.googleapis.com/css2?family=Gulzar&family=Noto+Serif+SC:wght@300;400;600&display=swap");
-@font-face {
-  font-family: 'Linux Biolinum';
-  src: url("/fonts/LinBiolinum_Rah.eot");
-  font-display: swap;
-  src: url("/fonts/LinBiolinum_Rah.eot") format('embedded-opentype'), url("/fonts/LinBiolinum_Rah.woff2") format('woff2'), url("/fonts/LinBiolinum_Rah.woff") format('woff'), url("/fonts/LinBiolinum_Rah.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Linux Biolinum';
-  src: url("/fonts/LinBiolinum_RBah.eot");
-  font-display: swap;
-  src: url("/fonts/LinBiolinum_RBah.eot") format('embedded-opentype'), url("/fonts/LinBiolinum_RBah.woff2") format('woff2'), url("/fonts/LinBiolinum_RBah.woff") format('woff'), url("/fonts/LinBiolinum_RBah.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Linux Biolinum';
-  src: url("/fonts/LinBiolinum_RIah.eot");
-  font-display: swap;
-  src: url("/fonts/LinBiolinum_RIah.eot") format('embedded-opentype'), url("/fonts/LinBiolinum_RIah.woff2") format('woff2'), url("/fonts/LinBiolinum_RIah.woff") format('woff'), url("/fonts/LinBiolinum_RIah.ttf") format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-body {
-  font-family: 'Linux Biolinum', 'Noto Serif SC', serif;
-  font-weight: 700;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Linux Biolinum', 'Noto Serif SC', serif;
-  font-weight: 700;
 }
