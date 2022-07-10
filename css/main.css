@@ -4,8 +4,8 @@
   --card-bg-color: #f5f5f5;
   --text-color: #555;
   --blockquote-color: #666;
-  --link-color: #555;
-  --link-hover-color: #222;
+  --link-color: #091f74;
+  --link-hover-color: #7844c3;
   --brand-color: #fff;
   --brand-hover-color: #fff;
   --table-row-odd-bg-color: #f9f9f9;
@@ -273,7 +273,7 @@ dd {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 1em;
+  font-size: 0.9325em;
   margin: 0 0 20px;
   width: 100%;
 }
@@ -306,7 +306,7 @@ td {
   border-radius: 0;
   color: var(--btn-default-color);
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.9325em;
   line-height: 2;
   padding: 0 20px;
   transition: background-color 0.2s ease-in-out;
@@ -409,7 +409,7 @@ pre figcaption {
   background: var(--highlight-gutter-background);
   color: var(--highlight-foreground);
   display: flow-root;
-  font-size: 1em;
+  font-size: 0.9325em;
   line-height: 1.2;
   padding: 0.5em;
 }
@@ -430,7 +430,7 @@ code {
 }
 code {
   border-radius: 3px;
-  font-size: 1em;
+  font-size: 0.9325em;
   padding: 2px 4px;
   overflow-wrap: break-word;
 }
@@ -1340,7 +1340,7 @@ pre code {
 }
 .site-description {
   color: #999;
-  font-size: 1.125em;
+  font-size: 1em;
   margin-top: 5px;
 }
 .links-of-author a {
@@ -1378,7 +1378,7 @@ pre code {
   font-size: 0.875em;
 }
 .links-of-blogroll-title {
-  font-size: 1em;
+  font-size: 0.9325em;
   font-weight: 600;
   margin-top: 0;
 }
@@ -1423,7 +1423,7 @@ pre code {
   color: #666;
   cursor: pointer;
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.9325em;
 }
 .sidebar-nav li.sidebar-nav-overview {
   margin-left: 10px;
@@ -1510,7 +1510,7 @@ pre code {
   transform: rotate(-45deg);
 }
 .post-toc {
-  font-size: 1em;
+  font-size: 0.9325em;
 }
 .post-toc ol {
   list-style: none;
@@ -1567,16 +1567,16 @@ pre code {
 }
 .site-state-item-count {
   display: block;
-  font-size: 1.375em;
+  font-size: 1.25em;
   font-weight: 600;
 }
 .site-state-item-name {
   color: inherit;
-  font-size: 1em;
+  font-size: 0.9325em;
 }
 .footer {
   color: #999;
-  font-size: 1em;
+  font-size: 0.9325em;
   padding: 20px 0;
 }
 .footer.footer-fixed {
@@ -1609,7 +1609,7 @@ pre code {
 }
 .languages {
   display: inline-block;
-  font-size: 1.25em;
+  font-size: 1.0625em;
   position: relative;
 }
 .languages .lang-select-label span {
@@ -1841,7 +1841,7 @@ pre code {
   }
 }
 .posts-collapse .post-content .collection-title {
-  font-size: 1.25em;
+  font-size: 1.0625em;
   position: relative;
 }
 .posts-collapse .post-content .collection-title::before {
@@ -1857,7 +1857,7 @@ pre code {
   width: 10px;
 }
 .posts-collapse .post-content .collection-year {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: bold;
   margin: 60px 0;
   position: relative;
@@ -1919,7 +1919,7 @@ pre code {
   color: var(--link-color);
 }
 .posts-collapse .post-content .post-title .fa-external-link-alt {
-  font-size: 1em;
+  font-size: 0.9325em;
   margin-left: 5px;
 }
 .posts-collapse .post-content::before {
@@ -1937,7 +1937,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .post-body {
-    font-size: 1.25em;
+    font-size: 1.0625em;
     font-weight: 400;
   }
 }
@@ -1966,7 +1966,7 @@ pre code {
   border-bottom-style: none;
   color: inherit;
   float: right;
-  font-size: 1em;
+  font-size: 0.9325em;
   margin-left: 10px;
   opacity: 0;
 }
@@ -2015,14 +2015,14 @@ pre code {
   opacity: 1;
 }
 .post-body .exturl .fa {
-  font-size: 1em;
+  font-size: 0.9325em;
   margin-left: 4px;
 }
 .post-body .image-caption,
 .post-body img + figcaption,
 .post-body .fancybox + figcaption {
   color: #999;
-  font-size: 1em;
+  font-size: 0.9325em;
   font-weight: bold;
   line-height: 1;
   margin: -15px auto 15px;
@@ -2079,12 +2079,12 @@ pre code {
   margin: 15px 0;
 }
 .posts-expand .post-header {
-  font-size: 1.25em;
+  font-size: 1.0625em;
   margin-bottom: 60px;
   text-align: center;
 }
 .posts-expand .post-title {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: normal;
   margin: initial;
   overflow-wrap: break-word;
@@ -2110,7 +2110,7 @@ pre code {
   transform: scaleX(1);
 }
 .posts-expand .post-title-link .fa-external-link-alt {
-  font-size: 1em;
+  font-size: 0.9325em;
   margin-left: 5px;
 }
 .post-sticky-flag {
@@ -2125,7 +2125,7 @@ pre code {
   margin-top: 3px;
 }
 .posts-expand .post-meta-container .post-description {
-  font-size: 1em;
+  font-size: 0.9325em;
   margin-top: 2px;
 }
 .posts-expand .post-meta-container time {
@@ -2166,7 +2166,7 @@ pre code {
 .post-nav-item a {
   border-bottom: 0;
   display: block;
-  font-size: 1em;
+  font-size: 0.9325em;
   line-height: 1.6;
 }
 .post-nav-item a:active {
@@ -2223,7 +2223,7 @@ pre code {
 }
 .social-like {
   display: flex;
-  font-size: 1em;
+  font-size: 0.9325em;
   justify-content: center;
   text-align: center;
 }
@@ -2711,7 +2711,7 @@ ul.breadcrumb li:last-child {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #a1dbff;
+  background: #626e60;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
